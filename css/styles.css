@@ -1,20 +1,44 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-    gap: 20px; /* Gap between the columns */
-    padding: 20px;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 10px;
+    width: 80%;
 }
 
 .grid-item {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
 }
+
+.grid-one {
+    background-color: #3498db; /* Blue */
+}
+
+.grid-two {
+    background-color: #2ecc71; /* Green */
+}
+
+.grid-three {
+    background-color: #e74c3c; /* Red */
+}
+
