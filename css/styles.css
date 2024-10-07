@@ -1,65 +1,76 @@
-/* Basic grid styling */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
   }
   
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /* Middle column is wider */
-    gap: 20px;
-    width: 80%;
-    max-width: 1200px;
-   
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
   }
   
-  .grid-item {
+  .container {
     display: flex;
-    justify-content: center;
+    height: 100vh; /* Occupies the full viewport height */
+    width: 100vw; /* Occupies the full viewport width */
+  }
+  
+  .column {
+    display: flex;
     align-items: center;
+    justify-content: center;
     padding: 20px;
-    color: #fff;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    text-align: center;
     transition: background-color 0.3s ease;
+    text-align: center;
   }
   
-  /* Initial pastel colors */
-  .item1 {
-    background-color: #ffcccc; /* Light pink */
+  /* Column 1 */
+  .column1 {
+    background-color: #ffd1dc; /* Pastel pink */
+    flex: 1;
   }
   
-  .item2 {
-    background-color: #ccffcc; /* Light green */
+  /* Column 2 (Middle, larger column) */
+  .column2 {
+    background-color: #b3e5fc; /* Pastel blue */
+    flex: 2;
   }
   
-  .item3 {
-    background-color: #ccccff; /* Light purple */
+  /* Column 3 */
+  .column3 {
+    background-color: #c8e6c9; /* Pastel green */
+    flex: 1;
   }
   
-  /* Responsive changes */
+  h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  /* Responsive for smaller screens */
   @media (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: 1fr; /* Stack columns */
+    .column1 {
+      background-color: #f8bbd0; /* Change to another pastel color */
     }
-  
-    .item1 {
-      background-color: #ff9999; /* Darker pink */
+    
+    .column2 {
+      background-color: #81d4fa;
     }
-  
-    .item2 {
-      background-color: #99ff99; /* Darker green */
-    }
-  
-    .item3 {
-      background-color: #9999ff; /* Darker purple */
+    
+    .column3 {
+      background-color: #a5d6a7;
     }
   }
+  
+  /* Stack columns on top of each other on very small screens */
+  @media (max-width: 480px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .column {
+      height: 33.33vh; /* Each column takes one-third of the height */
+    }
+  }
+  
   
