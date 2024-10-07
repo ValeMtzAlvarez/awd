@@ -16,10 +16,7 @@ body {
     gap: 20px;
     width: 80%;
     max-width: 1200px;
-    border-radius: 0px;
-background: #e392fe;
-box-shadow: inset 20px 20px 55px #c17cd8,
-            inset -20px -20px 55px #ffa8ff;
+   
   }
   
   .grid-item {
