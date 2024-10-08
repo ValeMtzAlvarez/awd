@@ -1,28 +1,28 @@
 :root {
     /* Custom color palette */
-    --background: rgb(150, 193, 236); /* #323B42 */
-    --foreground: rgb(239, 239, 179); /* #FCFBF9 */
+    --background: #F2274C; 
+    --foreground: rgb(255, 255, 255); /* #FCFBF9 */
 
-    --card: rgb(247, 167, 115); /* #D9C7BE */
-    --card-foreground: rgb(218, 142, 248); /* #323B42 */
+    --card: #906FA6; 
+    --card-foreground:#D9501E; 
 
-    --popover: rgb(81, 50, 16); /* #D9C7BE */
-    --popover-foreground: rgb(166, 129, 109); /* #323B42 */
+    --popover: #010440; 
+    --popover-foreground:#F2B950; 
 
-    --primary: rgb(126, 241, 243); /* #635B58 */
-    --primary-foreground: hsla(50, 25%, 98%, 1); /* #FCFBF9 */
+    --primary: #F24405; 
+    --primary-foreground: #F2F2F2; 
 
-    --secondary: rgb(142, 119, 97); /* #A59B95 */
-    --secondary-foreground: rgb(88, 91, 94); /* #323B42 */
+    --secondary: #061940; 
+    --secondary-foreground: #D96B52; 
 
-    --muted: rgb(244, 247, 121); /* #8C817B */
-    --muted-foreground: rgb(58, 88, 222); /* #FCFBF9 */
+    --muted: #A61C81; 
+    --muted-foreground:#D96704; 
 
-    --accent: rgb(235, 111, 167); /* #B5A79F */
-    --accent-foreground: rgb(239, 191, 228); /* #635B58 */
+    --accent: #F21326; 
+    --accent-foreground:#010440; 
 
-    --destructive: rgb(232, 144, 243); /* #3B3634 */
-    --destructive-foreground: rgb(249, 244, 153); /* #FCFBF9 */
+    --destructive: #7278F2; 
+    --destructive-foreground: #F2F2DC; 
 
     --border: hsla(28, 1%, 61%, 1); /* #A59B95 */
     --input: rgb(232, 208, 188); /* #B5A79F */
