@@ -1,10 +1,10 @@
 :root {
     /* Custom color palette */
     --background: #F2274C; 
-    --foreground: rgb(255, 255, 255); /* #FCFBF9 */
+    --foreground:  rgb(255, 255, 255);
 
-    --card: #906FA6; 
-    --card-foreground:#D9501E; 
+    --card: #64149a; 
+    --card-foreground:#f59673; 
 
     --popover: #010440; 
     --popover-foreground:#F2B950; 
@@ -13,13 +13,13 @@
     --primary-foreground: #F2F2F2; 
 
     --secondary: #061940; 
-    --secondary-foreground: #D96B52; 
+    --secondary-foreground: #d54626; 
 
     --muted: #A61C81; 
-    --muted-foreground:#D96704; 
+    --muted-foreground:#ffffff; 
 
     --accent: #F21326; 
-    --accent-foreground:#010440; 
+    --accent-foreground: #010440; 
 
     --destructive: #7278F2; 
     --destructive-foreground: #F2F2DC; 
