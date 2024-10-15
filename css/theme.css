@@ -1,6 +1,6 @@
 :root {
     /* Custom color palette */
-    --background: #F2274C; 
+    --background: #f497a8; 
     --foreground:  rgb(255, 255, 255);
 
     --card: #64149a; 
@@ -12,7 +12,7 @@
     --primary: #F24405; 
     --primary-foreground: #F2F2F2; 
 
-    --secondary: #061940; 
+    --secondary: #7990bf; 
     --secondary-foreground: #d54626; 
 
     --muted: #A61C81; 
