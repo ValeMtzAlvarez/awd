@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh; /* Occupies the full viewport height */
+    width: 100vw; /* Occupies the full viewport width */
+  }
+  
+  .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  /* Column 1 */
+  .column1 {
+    background-color: #ffd1dc; /* Pastel pink */
+    flex: 1;
+  }
+  
+  /* Column 2 (Middle, larger column) */
+  .column2 {
+    background-color: #b3e5fc; /* Pastel blue */
+    flex: 2;
+  }
+  
+  /* Column 3 */
+  .column3 {
+    background-color: #c8e6c9; /* Pastel green */
+    flex: 1;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .column1 {
+      background-color: #f8bbd0; /* Change to another pastel color */
+    }
+    
+    .column2 {
+      background-color: #81d4fa;
+    }
+    
+    .column3 {
+      background-color: #a5d6a7;
+    }
+  }
+  
+  /* Stack columns on top of each other on very small screens */
+  @media (max-width: 480px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .column {
+      height: 33.33vh; /* Each column takes one-third of the height */
+    }
+  }
+  
+  
