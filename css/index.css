@@ -1,5 +1,7 @@
+@import "base.css";
+
 @import "styles.css";
 @import "theme.css";
 @import "nav.css";
-@import "base.css";
+
 @import "media-queries.css";

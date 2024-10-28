@@ -50,7 +50,7 @@
   /* Responsive for smaller screens */
   @media (max-width: 768px) {
     .column1 {
-      background-color: #f8bbd0; /* Change to another pastel color */
+      background-color: #ffffff; /* Change to another pastel color */
     }
     
     .column2 {
@@ -71,6 +71,13 @@
     .column {
       height: 33.33vh; /* Each column takes one-third of the height */
     }
-  }
   
+  
+    h3 {
+      font-family: 'Oswald', sans-serif; /* Using Oswald Light */
+      font-weight: 300; /* Light version of the font */
+      font-size: 24px;
+      color: black;
+      text-align: left;
+  }
   
