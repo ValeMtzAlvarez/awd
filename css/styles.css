@@ -72,12 +72,6 @@
       height: 33.33vh; /* Each column takes one-third of the height */
     }
   
-  
-    h3 {
-      font-family: 'Oswald', sans-serif; /* Using Oswald Light */
-      font-weight: 300; /* Light version of the font */
-      font-size: 24px;
-      color: black;
-      text-align: left;
   }
+  
   

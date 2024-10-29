@@ -73,7 +73,6 @@ footer div {
 
 h1,
 h2,
-h3,
 h4 {
     color: var(--destructive);
 }
@@ -167,4 +166,12 @@ p {
 
 .final-section a:hover {
     color: var(--accent);
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif; /* Using Oswald Light */
+    font-weight: 300; /* Light version of the font */
+    font-size: 24px;
+    color: black;
+    text-align: left;
 }
