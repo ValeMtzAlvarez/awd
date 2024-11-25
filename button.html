@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click if You Dare</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    button {
+      background-color: #ff5252;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff1744;
+      transform: scale(1.1);
+    }
+
+    #quote {
+      margin-top: 20px;
+      font-size: 24px;
+      font-style: italic;
+      color: #555;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+  <button id="dareButton">Click if you dare</button>
+  <p id="quote"></p>
+
+  <script>
+    const quotes = [
+      "Believe you can and you're halfway there. – Theodore Roosevelt",
+      "The only way to do great work is to love what you do. – Steve Jobs",
+      "Success is not the key to happiness. Happiness is the key to success. – Albert Schweitzer",
+      "Do what you can, with what you have, where you are. – Theodore Roosevelt",
+      "Your limitation—it's only your imagination.",
+      "Dream it. Wish it. Do it."
+    ];
+
+    const button = document.getElementById("dareButton");
+    const quoteElement = document.getElementById("quote");
+    let interval;
+
+    // Function to display a random quote
+    const showRandomQuote = () => {
+      const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      quoteElement.textContent = randomQuote;
+
+      // Add fade-in effect
+      quoteElement.style.opacity = 0; // Start fade-out
+      setTimeout(() => {
+        quoteElement.style.opacity = 1; // Fade-in
+      }, 50);
+    };
+
+    // Button click event to start changing quotes
+    button.addEventListener("click", () => {
+      quoteElement.style.display = "block";
+      showRandomQuote();
+
+      // Start the interval to change quotes every 3 seconds
+      if (!interval) {
+        interval = setInterval(showRandomQuote, 3000); // Change quote every 3 seconds
+      }
+    });
+  </script>
+</body>
+</html>
+

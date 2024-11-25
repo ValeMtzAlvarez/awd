@@ -19,16 +19,18 @@ body {
     color: var(--secondary-foreground);
     display: flex;
     flex-direction: column; /* Arrange items in a column */
-    justify-content: center;
-    align-items: center;
 }
 
 
-/*  When the body has display: flex;
-    its children (header, footer, and main) become flex items. 
-    Flex items do not expand to fill their container's width
-    unless you explicitly set their width.
-*/
+.content {
+    flex: 1; /* Allows the container to take available space */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align child elements (like the button) to the left */
+    justify-content: center;
+    padding-left: 80px; /* Add space between the left edge and content */
+}
+
 
 main {
     width: 100%; /* Make sure it takes full width */
@@ -70,12 +72,6 @@ footer div {
     display: block;
 }
 
-
-h1,
-h2,
-h4 {
-    color: var(--destructive);
-}
 
 a {
     color: var(--muted-foreground);
@@ -168,10 +164,48 @@ p {
     color: var(--accent);
 }
 
-h3 {
-    font-family: 'Oswald', sans-serif; /* Using Oswald Light */
-    font-weight: 300; /* Light version of the font */
+.oswald {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     font-size: 24px;
     color: black;
-    text-align: left;
+
+}
+
+.oswald::after {
+    content: "designer, student, runner, traveler...";
+    font-family: 'Italiana', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: black;
+    display: block; /* Moves "designer" text to a new line */
+    margin-top: 5px;
+}
+
+/* Additional styles for the quote button and text */
+.quote-btn {
+    display: inline-block; /* Prevents stretching */
+    margin: 10px 0; /* Removes horizontal centering */
+    padding: 8px 10px; /* Controls button size */
+    background-color: #b69791; 
+    color: rgb(54, 54, 54);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.quote-btn:hover {
+    background-color:  #b69791; 
+}
+
+.quote-text {
+    margin-top: 10px;
+    font-family: 'Italiana', sans-serif;
+    font-size: 30px;
+    color: #333;
+   
+
 }
