@@ -1,0 +1,90 @@
+.conte {
+ padding: 75px 0;
+  margin: 0 auto;
+  width: 100%; /* Cambié el ancho a 100% para que sea completamente flexible */
+  max-width: 1140px;
+
+
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+   flex-wrap: wrap;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+
+.item:hover {
+flex: 1.5;
+}
+
+.item-1 {
+  background-image: url('../../assets/images/Skills/photoshop.jpg');
+}
+
+.item-2 {
+  background-image: url('../../assets/images/Skills/illustrator.jpg');
+}
+
+.item-3 {
+  background-image: url('../../assets/images/Skills/indesign.jpg');
+}
+
+.item-4 {
+  background-image: url('../../assets/images/Skills/figma.jpg');
+}
+
+.item-5 {
+  background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80');
+}
+
+
+@media (max-width: 1024px) {
+  .gallery-wrap {
+    flex-direction: column; /* En pantallas más pequeñas (como tablets), los items se apilan verticalmente */
+  }
+
+  .item {
+    flex: 1 1 100%; /* Los items ocupan todo el ancho en pantallas más pequeñas */
+    height: 200px; /* Ajuste la altura para pantallas más pequeñas */
+  }
+
+  h1 {
+    font-size: 2rem; /* Reduje el tamaño de la fuente en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem; /* Aún más pequeño en pantallas de dispositivos móviles */
+  }
+
+  .social {
+    right: 20px; /* Ajuste la posición de las redes sociales */
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conte {
+    padding: 50px 10px; /* Menos espacio de relleno en pantallas muy pequeñas */
+  }
+
+  .item {
+    height: 150px; /* Menor altura de los items en pantallas pequeñas */
+  } 
+
+  .social img {
+    width: 28px; /* Tamaño más pequeño para los iconos sociales en móviles */
+  }
+}
