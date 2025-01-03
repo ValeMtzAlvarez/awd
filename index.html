@@ -71,7 +71,7 @@
             <div class="content">
                 <div class="text">
                     <h1 style="font-size:14px">HI THERE!</h1>
-                    <h1 style="font-size:90px"  style="font-stretch:extra-condensed"> I AM VALERIA AND I AM A <span class="typing-text"></span> </h1>
+                    <h1 style="font-size:90px"  style="font-stretch:extra-condensed"> VALERIA AND I’M <span class="typing-text"></span> </h1>
                     
                     <a href="#about" class="btn">CLICK IF YOU DARE <i class="fa fa-chevron-circle-down"></i></a>
                 </div>
@@ -221,68 +221,97 @@ Throughout my studies, I’ve had the chance to work on a range of projects, inc
   <div class="text" >
  <p align="justify">
  My portfolio is not the only thing I have to offer knowledge from. In my free time, I enjoy practicing yoga and running because they keep me in the present, grounded and active. Additionally, I like reading, listening to music, but most of all, I love traveling because I get to experience different cultures, cuisines and take photographs of beautiful landscapes, architecture and art.
-</p>
+</p> 
+<br>
+<br>
+
+<button id="toggle-button" class="btn"  
+ >See you more</button>
+
+
 </div>
 </div>
 </div>
+ <div id="hidden-section" class="hidden">
 	<div class="box-container">
  	<div class="gallery">
 
             <ul class="controls">
                <!-- <li class="button btn active" data-filter="all">INFO 1</li>-->
-                <li class="button btn" data-filter="travel">TRAVEL</li>
-                <li class="button btn" data-filter="design">HOBBIES</li>
+                <li class="button btn" data-filter="all">TRAVEL</li>
+                <!--<li class="button btn" data-filter="design">HOBBIES</li> -->
                
             </ul>
     
 <div class="box-container">
             
-<div class="portfolio-item image travel" >
+<div class="portfolio-item image " >
 <img src="assets/images/About/1.jpg" alt="Portfolio-Image" />
 </div>
                 
                 
-<div class="portfolio-item image travel">
+<div class="portfolio-item image ">
 <img src="assets/images/About/2.jpg" alt="Portfolio-Image" />
 </div>
                                
                 
-<div class="portfolio-item image travel">
+<div class="portfolio-item image ">
 <img src="assets/images/About/3.jpg" alt="Portfolio-Image" />
 </div>
     
     
-    <div class="portfolio-item image travel" >
+    <div class="portfolio-item image " >
 <img src="assets/images/About/4.jpg" alt="Portfolio-Image" />
 </div>
                 
                 
-<div class="portfolio-item image design">
+<div class="portfolio-item image ">
 <img src="assets/images/About/5.jpg" alt="Portfolio-Image" />
 </div>
                                
                 
-<div class="portfolio-item image design">
+<div class="portfolio-item image ">
 <img src="assets/images/About/6.jpg" alt="Portfolio-Image" />
 </div>
 
-<div class="portfolio-item image design">
+<div class="portfolio-item image ">
 <img src="assets/images/About/7.jpeg" alt="Portfolio-Image" />
 </div>
 
-<div class="portfolio-item image design">
-<img src="assets/images/About/8.jpeg" alt="Portfolio-Image" />
+<div class="portfolio-item image ">
+  <video autoplay muted loop>
+    <source src="assets/images/About/viaje1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 </div>
 
+<div class="portfolio-item image ">
+  <video autoplay muted loop>
+    <source src="assets/images/About/viaje2.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+<div>
 
 </div>
     
 </div>
         
         </div>
+         
         
  </section> 
+<script>
+document.getElementById('toggle-button').addEventListener('click', function () {
+  const section = document.getElementById('hidden-section');
+  section.classList.toggle('hidden');
+});
 
+
+
+</script>
 
 <footer>
 <div class="content">

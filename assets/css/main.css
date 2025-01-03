@@ -1172,7 +1172,7 @@ footer .content p span{
 
 
  .text-box {
- background-color: #f9f7e0;
+ background-color: #EEEBE6;
     display: inline-flex; 
     justify-content: center;
     align-items: center;
@@ -1185,4 +1185,24 @@ footer .content p span{
     text-align: center;
     }
 	
+
+
+
+
+
+
+.hidden {
+  display: none;
+}
+
+#toggle-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  
+  cursor: pointer;
+}
+
+#toggle-button:hover {
+
+}
 
