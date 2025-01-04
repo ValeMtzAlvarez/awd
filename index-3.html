@@ -278,20 +278,46 @@ Throughout my studies, I’ve had the chance to work on a range of projects, inc
 <img src="assets/images/About/7.jpeg" alt="Portfolio-Image" />
 </div>
 
-<div class="portfolio-item image ">
-  <video autoplay muted loop>
-    <source src="assets/images/About/viaje1.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-<div class="portfolio-item image ">
+<!--<div class="portfolio-item image ">
+<div class="col-12 col-md-6">
   <video autoplay muted loop>
     <source src="assets/images/About/viaje2.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
+</div> -->
+
+<div class="col-12 col-md-6 video">
+  <video autoplay muted loop>
+    <source src="assets/images/About/viaje1.mp4" type="video/mp4" />
+
+  </video>
 </div>
 
+<div class="portfolio-item video">
+  <div class="col-12 col-md-12 align-height">
+    <video autoplay muted loop>
+      <source src="assets/images/About/viaje2.mp4" type="video/mp4" />
+
+    </video>
+  </div>
+</div>
+ <style>
+  .align-height {
+    display: flex; /* Permite alinear el contenido */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100%; /* Asegura que tome la altura completa de la fila */
+  }
+
+  .portfolio-item.image {
+    min-height: 100%; /* Ajusta el contenedor principal para igualar la altura */
+  }
+
+  video {
+    width: 100%; /* Asegura que el video sea responsivo */
+    height: 100%; /* Hace que el video llene el espacio disponible */
+    object-fit: cover; /* Ajusta el contenido del video para cubrir todo el área sin distorsión */
+  }
+</style>
 
 <div>
 

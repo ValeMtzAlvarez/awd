@@ -1206,3 +1206,20 @@ footer .content p span{
 
 }
 
+.col-span-2 {
+  grid-column: span 2;
+}
+
+
+  .video {
+    width: 100%; /* Asegura que el video sea responsivo */
+    height: 100%; /* Hace que el video llene el espacio disponible */
+    object-fit: cover; /* Ajusta el contenido del video para cubrir todo el �rea sin distorsi�n */
+  }
+  
+    video {
+    width: 100%; /* Asegura que el video sea responsivo */
+    height: 100%; /* Hace que el video llene el espacio disponible */
+    object-fit: cover; /* Ajusta el contenido del video para cubrir todo el �rea sin distorsi�n */
+  }
+
