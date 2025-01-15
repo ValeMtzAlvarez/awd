@@ -5,7 +5,7 @@
 
 ## Comments
 - Nice Typed js script, better not inline but in js dir
-- Brand section in skills maybe to large
+- Brand section in skills maybe too large
 - Missing responsiveness, favicon…
 - Nice colors and typography
 - Personal interests section requiere interaction, cool
